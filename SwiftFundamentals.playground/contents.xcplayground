@@ -7,6 +7,8 @@
         <page name='Swift4 - Incrementos e Operadores Lógicos'/>
         <page name='Swift5 - Condicoes '/>
         <page name='Swift6 - Tuplas'/>
-        <page name='Swift7 - Array'/>
+        <page name='Swift7_8 - Array'/>
+        <page name='Swift9 - Repeat'/>
+        <page name='Swift10 - For, Range, Where e Modulos'/>
     </pages>
 </playground>
