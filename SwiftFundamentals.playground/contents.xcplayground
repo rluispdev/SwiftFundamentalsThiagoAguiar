@@ -12,5 +12,6 @@
         <page name='Swift10 - For, Range, Where e Modulos'/>
         <page name='Swift11 - Interando Colecoes '/>
         <page name='Swift12 - Break e Continue'/>
+        <page name='Swift13 - Dictionary'/>
     </pages>
 </playground>
