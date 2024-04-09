@@ -14,5 +14,6 @@
         <page name='Swift12 - Break e Continue'/>
         <page name='Swift13 - Dictionary'/>
         <page name='Swift14 - Sets'/>
+        <page name='Swift15 - Func'/>
     </pages>
 </playground>
