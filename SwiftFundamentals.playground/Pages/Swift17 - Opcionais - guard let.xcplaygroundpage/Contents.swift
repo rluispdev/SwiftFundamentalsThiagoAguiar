@@ -1,7 +1,38 @@
 //: [Previous](@previous)
 
 import Foundation
+ 
+//Caso: Buscar um produto dentro de BD atraves do id.
 
-var greeting = "Hello, playground"
+func fetchProductById(id: Int) -> String{
+    
+    ///Simulando BD
+    let dict = [
+        1: "iPhone",
+        2: "Macbook",
+        3: "iPad"
+    ]
+    
+//    if let product = dict[id]{
+//        return product
+//    }
+//    ///Não precisa usar o else nesse caso.
+//    return "Esse valor não exsite."
+//}
+//
+//print(fetchProductById(id: 12))
 
-//: [Next](@next)
+
+    //Guard Let
+    
+    guard let product = dict[id] else { return "Esse valor não exsite."
+    }
+    return product
+}
+print(fetchProductById(id: 3))
+
+
+///Exemplo 2, podemos tratar varias  variaveis de uma vez....
+guard let product = dic[id],
+      let name = username,
+      let password = password else { return "todaos campos são obrigatórios"}

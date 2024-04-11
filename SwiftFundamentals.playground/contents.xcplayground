@@ -16,5 +16,6 @@
         <page name='Swift14 - Sets'/>
         <page name='Swift15 - Func'/>
         <page name='Swift16 - Opcionais'/>
+        <page name='Swift17 - Opcionais - guard let'/>
     </pages>
 </playground>
