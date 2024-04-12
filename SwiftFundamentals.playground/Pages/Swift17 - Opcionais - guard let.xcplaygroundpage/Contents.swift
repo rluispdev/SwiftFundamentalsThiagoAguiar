@@ -32,7 +32,4 @@ func fetchProductById(id: Int) -> String{
 print(fetchProductById(id: 3))
 
 
-///Exemplo 2, podemos tratar varias  variaveis de uma vez....
-guard let product = dic[id],
-      let name = username,
-      let password = password else { return "todaos campos são obrigatórios"}
+ 
