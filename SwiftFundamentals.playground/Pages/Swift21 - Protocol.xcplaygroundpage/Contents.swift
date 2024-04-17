@@ -13,24 +13,32 @@ class GoogleAnalytics {
     }
 }
 
-
 ///Sem protocol
 //Tela1
 class Login {
+    private let analytics = GoogleAnalytics()
     func fazerLogin(){
+        
         print("Fazendo login")
+        analytics.monitorarEvento(name: "Login")
     }
 }
 //Tela2
 class Home{
+    private let analytics = GoogleAnalytics()
+    
     func carregandoProdutos(){
         print("Carregando produtos")
+        analytics.monitorarEvento(name: "Home")
     }
 }
 //Tela3
 class Perfil {
+    private let analytics = GoogleAnalytics()
+    
     func editarPerfil(){
         print("Editando perfil")
+        analytics.monitorarEvento(name: "Perfil")
     }
 }
 
