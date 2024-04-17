@@ -20,7 +20,7 @@ class Login {
     func fazerLogin(){
         
         print("Fazendo login")
-        analytics.monitorarEvento(name: "Login")
+        analytics.monitorarEvento(name: "Login ")
     }
 }
 //Tela2
