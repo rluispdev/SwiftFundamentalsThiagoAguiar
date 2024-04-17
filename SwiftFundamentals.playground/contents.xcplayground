@@ -19,5 +19,7 @@
         <page name='Swift17 - Opcionais - guard let'/>
         <page name='Swift18 - Switch_Case'/>
         <page name='Swift19 - Function_Types'/>
+        <page name='Swift20 = 4TypesFunctions'/>
+        <page name='Swift21 - Protocol'/>
     </pages>
 </playground>
