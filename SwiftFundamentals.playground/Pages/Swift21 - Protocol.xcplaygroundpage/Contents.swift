@@ -61,11 +61,22 @@ print("fim do programa")
 // por isso o Protocolo seria como uma cartola de magico
 
 
+//MARK: COM PROTOCOL
 
-//Ferramenta de monitorameto do user no app.
+protocol Tracker {
+    func monitorarEvento(name: String)
+}
 
-
-class GoogleAnalytics1 {
+//MARK: - Monitoramento - Meu Sistema Analitics
+ 
+class MeuSistemaDeAnalytics: Tracker {
+    func monitorarEvento(name: String) {
+        print("Hey: \(name)")
+    }
+}
+//MARK: - Monitoramento - Google Analitics
+ 
+class GoogleAnalytics1 : Tracker {
     func monitorarEvento(name: String){
         //A gente faz a chamada aqui
         let dataDoEvento = Date()
@@ -73,45 +84,64 @@ class GoogleAnalytics1 {
     }
 }
 
-///Sem protocol
 //Tela1
 class Login1 {
-    private let analytics = GoogleAnalytics()
+    private let tracker: Tracker
+    
+    init (tracker: Tracker){
+        self.tracker = tracker
+    }
+    
     func fazerLogin1(){
         
         print("Fazendo login")
-        analytics.monitorarEvento(name: "Login ")
+        tracker.monitorarEvento(name: "Login ")
     }
 }
 //Tela2
 class Home1{
-    private let analytics = GoogleAnalytics()
+   
+    private let tracker: Tracker
+    init (tracker: Tracker){
+        self.tracker = tracker
+    }
     
     func carregandoProdutos1(){
         print("Carregando produtos")
-        analytics.monitorarEvento(name: "Home")
+       tracker.monitorarEvento(name: "Home")
     }
 }
 //Tela3
 class Perfil1 {
-    private let analytics = GoogleAnalytics()
+    private let tracker: Tracker
+    
+    init (tracker: Tracker){
+        self.tracker = tracker
+    }
     
     func editarPerfil1(){
         print("Editando perfil")
-        analytics.monitorarEvento(name: "Perfil")
+        tracker.monitorarEvento(name: "Perfil")
     }
 }
 
-print("Com protocolo ________________" )
-let login1 = Login1()
-login1.fazerLogin1()
+ 
+    //MARK: - Mudar aqui o nome das classe de monitoramento que desejo let t = Classe()
+
+let t = MeuSistemaDeAnalytics()
+
+let login1 = Login1(tracker: t)
+login1.fazerLogin1( )
 sleep(2)
 
-let perfil1 = Home1()
+let perfil1 = Home1(tracker: t)
 perfil1.carregandoProdutos1()
 sleep(5)
 
-let editPerfil1 = Perfil1()
+let editPerfil1 = Perfil1(tracker: t)
 editPerfil1.editarPerfil1()
 
 print("fim do programa 2")
+
+
+
