@@ -3,7 +3,7 @@
 import Foundation
 
 
-//FUNÇÃO CLÁSSICA - SIMPLES,    TRADICIONAL
+//FUNÇÃO CLÁSSICA - SIMPLES, TRADICIONAL
 func getFullName(firstName: String, lastName: String) -> String{
     return firstName + " " + lastName
 }

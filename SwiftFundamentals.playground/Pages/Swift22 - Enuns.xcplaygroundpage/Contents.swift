@@ -52,20 +52,20 @@ print(CartaoDeCretido.master.nome)
 
 
 enum StatusPhone{
-    case ligado
+    case ligado(nivel: Int)
     case desligado
     
     func status() -> String {
         switch self{
-            case .ligado:
-                return "Ligado"
+            case .ligado (let nivelBateria):
+                return "Ligado \(nivelBateria) % de bateria."
             case .desligado:
                 return "Ops! Desligado"
         }
     }
 }
 
-let phone : StatusPhone = StatusPhone.desligado
+let phone : StatusPhone = StatusPhone.ligado(nivel: 68)
 print(phone.status())
 
 

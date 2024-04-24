@@ -10,7 +10,7 @@ for  i in 0..<dollars.count {
     if days[i] == "03/02"{
         break
     }
-//    print("dolar \(dollars[i]), dia \(days[i])")
+ 
 }
  
 //Continue

@@ -7,8 +7,6 @@ for  i in 0..<dollars.count where dollars [i] < 5.0{
     print("dolar \(dollars[i]), dolar \(days[i])")
 }
  
-//Imprimir todos elementos
-
 for day in days {
     print(day)
 }

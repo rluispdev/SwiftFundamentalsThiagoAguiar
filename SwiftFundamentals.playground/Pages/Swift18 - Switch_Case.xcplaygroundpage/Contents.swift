@@ -18,7 +18,7 @@ func discount (productID: Int) -> Double {
 let d = discount(productID: 2)
 print("desconto \(Int(d * 100))%")
 
-//Imprimir uma frase baseada no ID do produto.
+ 
 var message = ""
 func printProduct(name: String){
     switch name {
