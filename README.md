@@ -24,6 +24,9 @@ Curso de Swift 5 do Desenvolvedor Thiago Aguiar, um curso prático e abrangente 
 
 1. Clone este repositório:
 
+````
+git@github.com:rluispdev/SwiftFundamentalsThiagoAguiar.git
+````
 
 ## Quem é Thiago Aguiar?
 -  Desenvolvedor Sênior de Aplicativos Móveis (Android e iOS) desde 2011 (+13 anos).
